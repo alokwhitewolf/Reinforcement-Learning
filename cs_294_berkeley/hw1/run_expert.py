@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 """
 Code to load an expert policy and generate roll-out data for behavioral cloning.
 Example usage:
@@ -67,6 +65,14 @@ def main():
 
         expert_data = {'observations': np.array(observations),
                        'actions': np.array(actions)}
+
+       ##Save the rollout data for later use and for various num_rollouts
+       
+        output_file_name = 'rollout_data/' + args.envname + '_' + str(args.num_rollouts) + '_data.pkl'
+		
+        with open(output_file_name, 'wb') as f:
+            pickle.dump(expert_data, f)
+
 
 if __name__ == '__main__':
     main()
