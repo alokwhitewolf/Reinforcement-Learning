@@ -1,3 +1,8 @@
+'''
+Supplementary code in Template
+
+'''
+
 import pickle, tensorflow as tf, tf_util, numpy as np
 
 def load_policy(filename):

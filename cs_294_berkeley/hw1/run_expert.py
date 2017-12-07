@@ -13,6 +13,7 @@ import numpy as np
 import tf_util
 import gym
 import load_policy
+import time
 
 def main():
     import argparse
@@ -21,14 +22,14 @@ def main():
     parser.add_argument('envname', type=str)
     parser.add_argument('--render', action='store_true')
     parser.add_argument("--max_timesteps", type=int)
-    parser.add_argument('--num_rollouts', type=int, default=20,
-                        help='Number of expert roll outs')
+    parser.add_argument('--num_rollouts', type=int, default=20,help='Number of expert roll outs')
     args = parser.parse_args()
 
     print('loading and building expert policy')
     policy_fn = load_policy.load_policy(args.expert_policy_file)
     print('loaded and built')
 
+  
     with tf.Session():
         tf_util.initialize()
 
@@ -54,24 +55,25 @@ def main():
                 steps += 1
                 if args.render:
                     env.render()
+                    time.sleep(0.01)
                 if steps % 100 == 0: print("%i/%i"%(steps, max_steps))
                 if steps >= max_steps:
                     break
             returns.append(totalr)
 
-        print('returns', returns)
-        print('mean return', np.mean(returns))
-        print('std of return', np.std(returns))
+            print('returns', returns)
+            print('mean return', np.mean(returns))
+            print('std of return', np.std(returns))
 
-        expert_data = {'observations': np.array(observations),
-                       'actions': np.array(actions)}
+            expert_data = {'observations': np.array(observations),
+                           'actions': np.array(actions)}
 
-       ##Save the rollout data for later use and for various num_rollouts
-       
-        output_file_name = 'rollout_data/' + args.envname + '_' + str(args.num_rollouts) + '_data.pkl'
-		
-        with open(output_file_name, 'wb') as f:
-            pickle.dump(expert_data, f)
+            ##Save the rollout data for later use and for various num_rollouts
+
+            output_file_name = 'rollout_data/' + args.envname + '_' + str(args.num_rollouts) + '_data.pkl'
+
+            with open(output_file_name, 'wb') as f:
+                pickle.dump(expert_data, f)
 
 
 if __name__ == '__main__':

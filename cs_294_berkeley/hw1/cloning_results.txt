@@ -1,0 +1,152 @@
+##########################
+Hopper-v1
+##########################
+
+ 
+ num of rollouts 10
+ Total returns : 66.916404716
+ mean return : 6.6916404716
+ std of return ; 0.0534971759261
+ 
+ num of rollouts 15
+ Total returns : 5618.66793885
+ mean return : 374.57786259
+ std of return ; 113.021462203
+ 
+ num of rollouts 20
+ Total returns : 82.5198043577
+ mean return : 4.12599021788
+ std of return ; 0.111350574139
+ 
+ num of rollouts 25
+ Total returns : 60.6271283221
+ mean return : 2.42508513288
+ std of return ; 0.155937326718
+##########################
+Ant-v1
+##########################
+
+ 
+ num of rollouts 10
+ Total returns : -3948.18812336
+ mean return : -394.818812336
+ std of return ; 5.23111829032
+ 
+ num of rollouts 15
+ Total returns : 2541.38944097
+ mean return : 169.425962731
+ std of return ; 45.5003021748
+ 
+ num of rollouts 20
+ Total returns : -3173.31900383
+ mean return : -158.665950191
+ std of return ; 173.744123676
+ 
+ num of rollouts 25
+ Total returns : -48637.2310307
+ mean return : -1945.48924123
+ std of return ; 1.53568449518
+
+##########################
+HalfCheetah-v1
+##########################
+
+ 
+ num of rollouts 10
+ Total returns : -3921.94842273
+ mean return : -392.194842273
+ std of return ; 2.93118481271
+ 
+ num of rollouts 15
+ Total returns : -4356.19449599
+ mean return : -290.4129664
+ std of return ; 4.46717111568
+ 
+ num of rollouts 20
+ Total returns : -6948.5120775
+ mean return : -347.425603875
+ std of return ; 1.88266909518
+ 
+ num of rollouts 25
+ Total returns : -4837.99176288
+ mean return : -193.519670515
+ std of return ; 0.910786908225
+
+##########################
+Humanoid-v1
+##########################
+
+ 
+ num of rollouts 10
+ Total returns : 1611.38784702
+ mean return : 161.138784702
+ std of return ; 9.1248279353
+ 
+ num of rollouts 15
+ Total returns : 5883.35558796
+ mean return : 392.223705864
+ std of return ; 97.2100380043
+ 
+ num of rollouts 20
+ Total returns : 3002.81991671
+ mean return : 150.140995836
+ std of return ; 7.70444873086
+ 
+ num of rollouts 25
+ Total returns : 6894.80871808
+ mean return : 275.792348723
+ std of return ; 58.6311409988
+
+##########################
+Reacher-v1
+##########################
+
+ 
+ num of rollouts 10
+ Total returns : -197.072597537
+ mean return : -19.7072597537
+ std of return ; 1.99073222171
+ 
+ num of rollouts 15
+ Total returns : -861.983013865
+ mean return : -57.4655342577
+ std of return ; 3.43185835801
+ 
+ num of rollouts 20
+ Total returns : -1311.26932287
+ mean return : -65.5634661433
+ std of return ; 1.87313959487
+ 
+ num of rollouts 25
+ Total returns : -277.610120809
+ mean return : -11.1044048324
+ std of return ; 2.14263217709
+
+##########################
+Walker2d-v1
+##########################
+
+ 
+ num of rollouts 10
+ Total returns : -139.54804347
+ mean return : -13.954804347
+ std of return ; 0.0668132595172
+ 
+ num of rollouts 15
+ Total returns : -71.5905065326
+ mean return : -4.77270043551
+ std of return ; 0.108200240532
+ 
+ num of rollouts 20
+ Total returns : 5124.15785827
+ mean return : 256.207892914
+ std of return ; 5.24224960519
+ 
+ num of rollouts 25
+ Total returns : -431.521907322
+ mean return : -17.2608762929
+ std of return ; 0.0806526501639
+
+##########################
+
+##########################
